@@ -1,0 +1,22 @@
+/*DOM*/
+html, body {
+
+}
+/*ID*/
+
+/*CLASS*/
+.heading {
+	height: 10vh;
+	line-height: 10vh;
+}
+.container {
+	height: 81vh;
+}
+.footer {
+	height: 6vh;
+	line-height: 6vh;
+
+}
+/*MULTI*/
+
+/*QUERY*/
