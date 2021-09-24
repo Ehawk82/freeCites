@@ -13,8 +13,10 @@ html, body {
 	height: 81vh;
 }
 .footer {
+	position: relative;
 	height: 6vh;
 	line-height: 6vh;
+	bottom: 0;
 
 }
 /*MULTI*/
