@@ -1,23 +1,36 @@
 /*DOM*/
 html, body {
-
+    font-weight: bolder;
+}
+button {
+   background: #002654;
+   color: #FCB514;
+   border:15px solid #FCB514;
 }
 /*ID*/
 
 /*CLASS*/
+.loginPort {
+    width: 10%;
+}
 .heading {
-	height: 10vh;
-	line-height: 10vh;
+    background: #002654;
+    color: #FCB514;
+    border-bottom: 15px solid #FCB514;
 }
 .container {
-	height: 81vh;
+	height: 74.5vh;
 }
 .footer {
+    background: #002654;
+    border-top: 15px solid #FCB514;
 	position: relative;
-	height: 6vh;
-	line-height: 6vh;
+	color: #FCB514;
 	bottom: 0;
-
+}
+.worker,.hirer {
+	line-height: 20vw;
+	width: 20vw;
 }
 /*MULTI*/
 
