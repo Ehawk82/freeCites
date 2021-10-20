@@ -2,42 +2,17 @@ const init = () => {
 	launchHomePage();
 },
 launchHomePage = () => {
-	const heading = createEle("h1"),
-		  worker = createEle("button"),
-		  hirer = createEle("button"),
-	      container = createEle("div"),
-	      footer = createEle("div");
+	const container = createEle("div"),
+	      disclaimer = createEle("div");
 	//
-	heading.innerHTML = "GTec";
-	heading.className = "heading w3-center w3-wide";
+	disclaimer.innerHTML = "This project has been suspended due to violations in the development contract and is pending investigation. <br/>  For more information, please see: <br/><code>18 U.S. Code § 1038</code>";
+	disclaimer.className = "disclaimer w3-red w3-padding-64 w3-margin w3-half w3-card-4";
 
-	worker.innerHTML = "WORKERS";
-	worker.onclick = workerPortal();
-	worker.className = "worker w3-margin w3-large";
+	container.append(disclaimer);
+	container.className = "container w3-center w3-padding-64";
 
-	hirer.innerHTML = "BUSINESS";
-	hirer.onclick = hirePortal();
-	hirer.className = "hirer w3-margin w3-large";
 
-	container.append(worker,hirer);
-	container.className = "container w3-center w3-card-4";
-
-	footer.innerHTML = "Ehawk LLC &copy; 2021 - Powered by w3css";
-	footer.className = "footer w3-center";
-
-	body.append(heading,container,footer);
-},
-workerPortal = () => {
-	return () => {
-		alert("this will point us to the workers portal")
-		console.log("hello work portal");
-	}
-},
-hirePortal = () => {
-	return () => {
-		alert("this will point us to the businesses portal")
-		console.log("hello hiring portal");
-	}
+	body.append(container);
 };
 
 window.onload = () => {

@@ -7,6 +7,10 @@ button {
    color: #FCB514;
    border:15px solid #FCB514;
 }
+code {
+    background: grey !important;
+    padding: 0 4px ;
+}
 /*ID*/
 
 /*CLASS*/
